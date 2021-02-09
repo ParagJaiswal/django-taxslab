@@ -22,7 +22,7 @@ def index(request):
 				z = 'From income 7,50,001 - Rs 10,00,000. TAX RATE IS 15%'
 				a = 'From income 10,00,001 - Rs 12,50,000. TAX RATE IS 20%'
 				b = 'Above 15,00,000. TAX RATE IS 30%'
-				return render(request,'taxcalculator/form.html',{'year':syear, 'taxpayer':taxpayer,'category':category,'status':status,"x":x,"y":y,"z":z,"a":a,"b":b,'sy':ty})
+				return render(request,'taxcalculator/form.html',{'year':syear, 'taxpayer':taxpayer,'category':category,'status':status,"x":x,"y":y,"z":z,"a":a,"b":b})
 			else:
 				c = "Your income is not taxable"
 				return render(request,'taxcalculator/form.html',{'year':syear, 'taxpayer':taxpayer,'category':category,'status':status,"c":c})
